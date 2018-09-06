@@ -199,7 +199,7 @@ set suspend
 ## Paint the interface elements of nano.
 ## These are examples; by default there are no colors.
 set titlecolor brightwhite,blue
-set statuscolor brightwhite,green
+set statuscolor black,green
 set selectedcolor brightwhite,magenta
 set numbercolor cyan
 set keycolor cyan
