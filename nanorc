@@ -265,6 +265,18 @@ include "/usr/share/nano/*.nanorc"
 ## You may wish to choose other keys than the ones suggested here.
 # bind M-B cutwordleft main
 # bind M-N cutwordright main
+bind ^C copytext main
+bind ^X cut main
+bind ^V uncut main
+bind ^Z undo main
+bind ^Y redo main
+bind ^O insert main
+bind ^S writeout main
+bind ^Q exit main
+bind ^J gotoline main
+bind ^P prevword main
+bind ^N nextword main
+bind M-Z suspend main
 
 ## Set this if your Backspace key sends Del most of the time.
 # bind Del backspace all
