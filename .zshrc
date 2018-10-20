@@ -98,3 +98,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 LS_COLORS=$LS_COLORS:'di=0;35:ow=0;33;40' ; export LS_COLORS
+ZSH_THEM='spaceship'
+
+# git completion
+# Download https://github.com/git/git/blob/master/contrib/completion/git-completion.zsh.
+# Copy the script to '~/.zsh/_git', and then add the following to ~/.zshrc:
+#
+#  fpath=(~/.zsh $fpath)
+fpath=(~/.zsh $fpath)
