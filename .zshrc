@@ -75,5 +75,5 @@ ZSH_THEME="spaceship"
 
 # `cd` and then `ls` in one command
 cl(){
-    cd "$@" && ls
+    cd "$@" && ls -A
 }
