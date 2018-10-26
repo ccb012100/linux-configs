@@ -72,3 +72,8 @@ ZSH_THEME="spaceship"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 . /c/GitHub/z/z.sh
+
+# `cd` and then `ls` in one command
+cl(){
+    cd "$@" && ls
+}
