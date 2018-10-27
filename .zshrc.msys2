@@ -125,20 +125,19 @@ setprompt() {
     p_host='%F{green}%M%f'
   fi
 
-  PS1=${(j::Q)${(Z:Cn:):-$'
+  PS1=${(j::Q)${(Z:Cn:):-$'# user@hostname + ♫ + PWD + ♠ + git + %
     %(!.%F{red}%n%f.%F{yellow}%n%f)
     %F{cyan}@%f
     ${p_host}
-    " "
+    %F{cyan}♫%f
     %F{blue}%~%f
-    " "
+    %F{cyan}♠%f
     ${vcs_info_msg_0_}
-    %(!.%F{red}%#%f.%F{green}%#%f)
+    %(!.%F{red}%#%f.%F{cyan}%#%f)
     " "
   '}}
 
   PS2=$'%_>'
-  RPROMPT=$'%F{magenta}%t%f %F{yellow}%W%f' # %t = 12 hour time AM/PM; %W = MM/DD/YYYY
+  RPROMPT=$'[ %F{magenta}%t%f %F{yellow}%W%f ]' # %t = 12 hour time AM/PM; %W = MM/DD/YYYY
 }
 setprompt
-
