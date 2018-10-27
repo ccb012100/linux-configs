@@ -1,3 +1,5 @@
+export TERM="xterm-256color"
+
 # User configuration
 setopt correct # spelling correction for commands
 setopt correctall # spelling correction for all arguments
@@ -23,24 +25,22 @@ esac
 
 source  ~/powerlevel9k/powerlevel9k.zsh-theme
 
-test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 alias ls='ls --color=auto'
 alias ll='ls -Al'
 alias la='ls -A'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
-
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
 alias g='git'
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
-
 alias less='less -r'                          # raw control characters
 alias whence='type -a'                        # where, of a sort
+alias sz='source ~/.zshrc'
+alias nz='nano ~/.zshrc'
 
 setopt cdablevars
 c='/mnt/c'
