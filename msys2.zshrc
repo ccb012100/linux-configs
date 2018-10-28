@@ -3,14 +3,14 @@
 export SSH_KEY_PATH="~/.ssh/rsa_id" # ssh
 
 fpath=(~/.zsh $fpath)
-fpath=(~/.zfunctions $fpath)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # fzf
 
 #-----------------------------
 # agkozak prompt
 #-----------------------------
-source ~/.oh-my-zsh/custom/themes/agkozak/agkozak-zsh-prompt.plugin.zsh
+source ~/agkozak-zsh-prompt/agkozak-zsh-prompt.plugin.zsh
+
 # left prompt
 AGKOZAK_CUSTOM_PROMPT='%(?..%B%F{red}(%?%)%f%b )'
 AGKOZAK_CUSTOM_PROMPT+='%(!.%S%B.%B%F{green})%n%1v%(!.%b%s.%f%b) '
@@ -99,14 +99,12 @@ man() {
 case $TERM in
   termite|*xterm*|rxvt|rxvt-unicode|rxvt-256color|rxvt-unicode-256color|(dt|k|E)term)
     precmd () {
-      vcs_info
       print -Pn "\e]0;%n@%M:%~ %#\a"
     }
     preexec () { print -Pn "\e]0;%n@%M:%~ %# ($1)\a" }
     ;;
   screen|screen-256color)
     precmd () {
-      vcs_info
       print -Pn "\e]83;title \"$1\"\a"
       print -Pn "\e]0;$TERM - (%L) %n@%M:%# %~\a"
     }
