@@ -18,7 +18,7 @@ AGKOZAK_CUSTOM_PROMPT+=$'%B%F{blue}%2v%f%b%(3V.%F{yellow}%3v%f.)\n'
 AGKOZAK_CUSTOM_PROMPT+='$(_agkozak_vi_mode_indicator) '
 
 # right prompt
-AGKOZAK_CUSTOM_RPROMPT='[ %F{magenta}%t%f %F{yellow}%W%f ]' # %t = 12 hour time AM/PM; %W = MM/DD/YYYY
+AGKOZAK_CUSTOM_RPROMPT='[%F{magenta}%t%f %F{yellow}%W%f ]' # %t = 12 hour time AM/PM; %W = MM/DD/YYYY
   
 #-----------------------------
 # setopt
