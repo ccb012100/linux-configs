@@ -41,7 +41,7 @@ SAVEHIST=1000
 # `cd` and then `ls` in one command
 #-----------------------------
 cl(){
-    cd "$@" && ls -A
+    cd "$@" && ls --color=auto -A
 }
 
 #-----------------------------
