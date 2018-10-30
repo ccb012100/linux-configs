@@ -54,6 +54,7 @@ alias nz='nano ~/.zshrc'
 # CDABLEVARS
 setopt cdablevars
 c='/mnt/c'
-gh='/mnt/c/GitHub/'
+gh='/mnt/c/GitHub'
+code='/mnt/c/code'
 
 LS_COLORS=$LS_COLORS:'ow=0;33;40' ; export LS_COLORS
