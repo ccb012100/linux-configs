@@ -76,7 +76,8 @@ alias whence='type -a'                        # where, of a sort
 #-----------------------------
 setopt cdablevars
 c='/c'
-gh='/c/GitHub/'
+gh='/c/GitHub'
+code='/c/code'
 
 #------------------------------
 # coloured man pages
