@@ -68,6 +68,7 @@ alias g='git'
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
+alias gl='git l'
 alias less='less -r'                          # raw control characters
 alias whence='type -a'                        # where, of a sort
 
