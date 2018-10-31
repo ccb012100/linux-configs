@@ -45,6 +45,7 @@ alias g='git'
 alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
+alias gl='git l'
 
 alias nano='nano -mc'
 
