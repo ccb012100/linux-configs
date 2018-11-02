@@ -6,6 +6,9 @@ fpath=(~/.zsh $fpath)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # fzf
 
+bindkey '\e[H' beginning-of-line
+bindkey '\e[F' end-of-line
+
 #-----------------------------
 # agkozak prompt
 #-----------------------------
@@ -18,7 +21,8 @@ AGKOZAK_CUSTOM_PROMPT+=$'%B%F{blue}%2v%f%b%(3V.%F{yellow}%3v%f.)\n'
 AGKOZAK_CUSTOM_PROMPT+='$(_agkozak_vi_mode_indicator) '
 
 # right prompt
-AGKOZAK_CUSTOM_RPROMPT='%F{green}[%h]%f%F{magenta}[%D{%H:%M:%S}]%f%F{yellow}[%w]%f' # %t = 12 hour time AM/PM; %W = MM/DD/YYYY
+AGKOZAK_CUSTOM_RPROMPT='%F{green}[%h]%f%F{magenta}[%D{%H:%M:%S}]%f%F{yellow}[%D{%a %b-%d}]%f' # 
+%t = 12 hour time AM/PM
 
 #-----------------------------
 # setopt
@@ -69,8 +73,8 @@ alias gc='git checkout'
 alias gb='git branch'
 alias gs='git status'
 alias gl='git l'
-alias less='less -r'                          # raw control characters
-alias whence='type -a'                        # where, of a sort
+alias less='less -r'   # raw control characters
+alias whence='type -a' # where, of a sort
 
 #-----------------------------
 # CDABLEVARS
