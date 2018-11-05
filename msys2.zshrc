@@ -6,8 +6,11 @@ fpath=(~/.zsh $fpath)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # fzf
 
-bindkey '\e[H' beginning-of-line
-bindkey '\e[F' end-of-line
+bindkey '\e[H' beginning-of-line #HOME key
+bindkey '\e[F' end-of-line # END key
+bindkey "\e[3~" delete-char # DELETE key
+bindkey "^[[1;5C" forward-word # CTRL right-arrow
+bindkey "^[[1;5D" backward-word # CTRL left-arrow
 
 #-----------------------------
 # agkozak prompt
@@ -21,8 +24,7 @@ AGKOZAK_CUSTOM_PROMPT+=$'%B%F{blue}%2v%f%b%(3V.%F{yellow}%3v%f.)\n'
 AGKOZAK_CUSTOM_PROMPT+='$(_agkozak_vi_mode_indicator) '
 
 # right prompt
-AGKOZAK_CUSTOM_RPROMPT='%F{green}[%h]%f%F{magenta}[%D{%H:%M:%S}]%f%F{yellow}[%D{%a %b-%d}]%f' # 
-%t = 12 hour time AM/PM
+AGKOZAK_CUSTOM_RPROMPT='%F{blue}[%h]%f%F{yello}[%D{%H:%M:%S}]%f%F{cyan}[%D{%a %b-%d}]%f' #%t = 12 hour time AM/PM
 
 #-----------------------------
 # setopt
