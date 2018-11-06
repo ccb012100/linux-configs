@@ -1,3 +1,6 @@
+## File name should either be
+## ~/.nanorc or /etc/nanorc
+
 ## Sample initialization file for GNU nano.
 ##
 ## This file should not be in DOS or Mac format, and characters
