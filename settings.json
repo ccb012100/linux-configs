@@ -1,0 +1,152 @@
+{
+  "AsciiDoc.active_line_color": "lightgoldenrodyellow",
+  // bracketPairColorizer
+  "bracket-pair-colorizer-2.colors": ["()", "[]", "{}", ["<", "</"], ["<", "/>"], ["Green", "DarkOrchid", "GoldenRod"], "Red"],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "breadcrumbs.enabled": true,
+  "csharp.format.enable": true,
+  "omnisharp.autoStart": true,
+  // editor
+  "editor.codeLens": false,
+  "editor.fontFamily": "Fira Code, Ubuntu Mono, Consolas",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.letterSpacing": 1,
+  "editor.minimap.enabled": false,
+  "editor.minimap.maxColumn": 60,
+  "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.suggest.localityBonus": true,
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
+  // explorer
+  "explorer.confirmDragAndDrop": false,
+  // files
+  "files.associations": {
+    "*.vssettings": "xml",
+    "*.adoc": "asciidoc"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+  "files.trimTrailingWhitespace": true,
+  // Git
+  "git.allowForcePush": true,
+  "git.confirmForcePush": true,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "git.autofetch": true,
+  "git.defaultCloneDirectory": "C:/code",
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.promptToSaveFilesBeforeCommit": true,
+  "git.rebaseWhenSync": true,
+  "git.scanRepositories": ["C:/code, C:/temp, C:/GitHub"],
+  // GitLens
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.defaultGravatarsStyle": "retro",
+  "gitlens.settings.mode": "advanced",
+  // HTML
+  "html.suggest.angular1": false,
+  // Markdown
+  "markdown.extension.orderedList.autoRenumber": false,
+  "markdown.preview.fontFamily": "Consolas",
+  "markdownlint.config": {
+    "MD013": false,
+    "MD024": { "siblings_only": true },
+    "MD026": false
+  },
+  // prettier
+  "prettier.printWidth": 140,
+  "prettier.singleQuote": true,
+  // terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.env.windows": {
+    "MSYSTEM": "MINGW64",
+    "MSYS2_PATH_TYPE": "inherit",
+    "CHERE_INVOKING": "1"
+  },
+  "terminal.integrated.fontFamily": "Ubuntu Mono",
+  "terminal.integrated.shell.windows": "C:\\tools\\msys64\\msys2_shell.cmd",
+  "terminal.integrated.shellArgs.windows": ["-defterm", "-here", "-no-start"],
+  // ts-lint
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  // TypeScript
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vsicons.projectDetection.autoReload": true,
+  // window
+  "window.enableMenuBarMnemonics": false,
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  // workbench
+  "workbench.colorTheme": "Sublime Material Theme - Dark",
+  "workbench.editor.showTabs": true,
+  // this should be released in November
+  //  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.statusBar.feedback.visible": false,
+  // Zen Mode
+  "zenMode.hideStatusBar": false,
+  // YAML
+  "yaml.format.enable": true,
+  "workbench.colorCustomizations": {
+    "activityBarBadge.background": "#2979FF",
+    "list.activeSelectionForeground": "#2979FF",
+    "list.inactiveSelectionForeground": "#2979FF",
+    "list.highlightForeground": "#2979FF",
+    "scrollbarSlider.activeBackground": "#2979FF50",
+    "editorSuggestWidget.highlightForeground": "#2979FF",
+    "textLink.foreground": "#2979FF",
+    "progressBar.background": "#2979FF",
+    "pickerGroup.foreground": "#2979FF",
+    "tab.activeBorder": "#2979FF",
+    "notificationLink.foreground": "#2979FF",
+    "editorWidget.resizeBorder": "#2979FF",
+    "editorWidget.border": "#2979FF",
+    "settings.modifiedItemIndicator": "#2979FF",
+    "settings.headerForeground": "#2979FF",
+    "panelTitle.activeBorder": "#2979FF",
+    "breadcrumb.activeSelectionForeground": "#2979FF",
+    "menu.selectionForeground": "#2979FF",
+    "menubar.selectionForeground": "#2979FF"
+  },
+  // AsciiDoc
+  "[asciidoc]": {
+    "editor.fontSize": 14,
+    "editor.fontFamily": "Ubuntu Mono Consolas, 'Courier New', monospace",
+    "editor.quickSuggestions": true,
+    "editor.wordWrap": "on"
+  },
+  // Markdown
+  "[markdown]": {
+    "editor.fontFamily": "Ubuntu Mono Consolas, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.quickSuggestions": true,
+    "files.trimTrailingWhitespace": false
+  }
+}
