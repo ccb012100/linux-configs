@@ -18,7 +18,8 @@ bindkey "^[[1;5D" backward-word # CTRL left-arrow
 source ~/agkozak-zsh-prompt/agkozak-zsh-prompt.plugin.zsh
 
 # left prompt
-AGKOZAK_CUSTOM_PROMPT='%F{blue}[%h]%f%F{yellow} %D{%H:%M:%S}%f%F{cyan} %D{%a %b-%d}%f' #%t = 12 hour time AM/PM
+AGKOZAK_CUSTOM_PROMPT='%F{blue}%h %f%F{yellow} %D{%H:%M:%S}%f%F{cyan} %D{%a %b-%d}%f' #%t = 12 hour time 
+AM/PM
 AGKOZAK_CUSTOM_PROMPT+=' %(!.%S%B.%B%F{green})%n%1v%(!.%b%s.%f%b) '
 AGKOZAK_CUSTOM_PROMPT+=$'%B%F{blue}%2v%f%b%(3V.%F{yellow}%3v%f.)'
 AGKOZAK_CUSTOM_PROMPT+=' %(?..%B%F{red}(%?%)%f%b)'
