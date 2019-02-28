@@ -18,8 +18,7 @@ bindkey "^[[1;5D" backward-word # CTRL left-arrow
 source ~/agkozak-zsh-prompt/agkozak-zsh-prompt.plugin.zsh
 
 # left prompt
-AGKOZAK_CUSTOM_PROMPT='%F{blue}%h %f%F{yellow} %D{%H:%M:%S}%f%F{cyan} %D{%a %b-%d}%f' #%t = 12 hour time 
-AM/PM
+AGKOZAK_CUSTOM_PROMPT='%F{blue}%h%f%F{yellow} %D{%H:%M:%S}%f%F{cyan} %D{%a %b-%d}%f' #%t = 12 hour time AM/PM
 AGKOZAK_CUSTOM_PROMPT+=' %(!.%S%B.%B%F{green})%n%1v%(!.%b%s.%f%b) '
 AGKOZAK_CUSTOM_PROMPT+=$'%B%F{blue}%2v%f%b%(3V.%F{yellow}%3v%f.)'
 AGKOZAK_CUSTOM_PROMPT+=' %(?..%B%F{red}(%?%)%f%b)'
@@ -90,8 +89,6 @@ c='/c'
 gh='/c/GitHub'
 code='/c/code'
 temp='/c/temp'
-v3='/c/code/vpay360'
-vpayrest='/c/code/vpay-rest-api'
 
 #------------------------------
 # coloured man pages
@@ -130,9 +127,9 @@ case $TERM in
     ;;
 esac
 
-# 
+#
 # function cd_func
-# This function defines a 'cd' replacement function capable of keeping, 
+# This function defines a 'cd' replacement function capable of keeping,
 # displaying and accessing history of visited directories, up to 10 entries.
 # To use it, uncomment it, source this file and try 'cd --'.
 # acd_func 1.0.5, 10-nov-2004
@@ -192,7 +189,7 @@ cd_func ()
 alias cd=cd_func
 
 # function settitle
-settitle () 
-{ 
-  echo -ne "\e]2;$@\a\e]1;$@\a"; 
+settitle ()
+{
+  echo -ne "\e]2;$@\a\e]1;$@\a";
 }
