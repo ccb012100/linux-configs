@@ -22,12 +22,10 @@ AGKOZAK_CUSTOM_PROMPT='%F{blue}%h%f%F{yellow} %D{%H:%M:%S}%f%F{cyan} %D{%a %b-%d
 AGKOZAK_CUSTOM_PROMPT+=' %(!.%S%B.%B%F{green})%n%1v%(!.%b%s.%f%b) '
 AGKOZAK_CUSTOM_PROMPT+=$'%B%F{blue}%2v%f%b%(3V.%F{yellow}%3v%f.)'
 AGKOZAK_CUSTOM_PROMPT+=' %(?..%B%F{red}(%?%)%f%b)'
-AGKOZAK_CUSTOM_PROMPT+='
-'
 AGKOZAK_CUSTOM_PROMPT+='$(_agkozak_vi_mode_indicator) '
 
 # right prompt
-#AGKOZAK_CUSTOM_RPROMPT=''
+##AGKOZAK_CUSTOM_RPROMPT=''
 
 #-----------------------------
 # setopt
@@ -80,6 +78,7 @@ alias gs='git status'
 alias gl='git l'
 alias less='less -r'   # raw control characters
 alias whence='type -a' # where, of a sort
+alias jq='jq -C' # colorize json
 
 #-----------------------------
 # CDABLEVARS
@@ -127,9 +126,9 @@ case $TERM in
     ;;
 esac
 
-#
+# 
 # function cd_func
-# This function defines a 'cd' replacement function capable of keeping,
+# This function defines a 'cd' replacement function capable of keeping, 
 # displaying and accessing history of visited directories, up to 10 entries.
 # To use it, uncomment it, source this file and try 'cd --'.
 # acd_func 1.0.5, 10-nov-2004
@@ -189,7 +188,7 @@ cd_func ()
 alias cd=cd_func
 
 # function settitle
-settitle ()
-{
-  echo -ne "\e]2;$@\a\e]1;$@\a";
+settitle () 
+{ 
+  echo -ne "\e]2;$@\a\e]1;$@\a"; 
 }
